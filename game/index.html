@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spot the Difference</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <div id="header">
+    <h1>Spot the Difference</h1>
+    <div id="stats">
+      <span id="found">0</span> / <span id="total">0</span> found
+      <span id="timer">00:00</span>
+    </div>
+  </div>
+  <div id="canvases">
+    <div class="canvas-wrap">
+      <canvas id="canvasA" width="600" height="400"></canvas>
+      <div class="label">Original</div>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="canvasB" width="600" height="400"></canvas>
+      <div class="label">Modified</div>
+    </div>
+  </div>
+  <div id="controls">
+    <button id="hintBtn">Hint (3)</button>
+    <button id="restartBtn">Restart</button>
+  </div>
+  <div id="win" class="hidden">
+    <h2>You Win!</h2>
+    <p>Time: <span id="winTime"></span></p>
+    <button id="nextBtn">Next Level</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
